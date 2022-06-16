@@ -1,10 +1,13 @@
 import './ClimateStats.css';
-import {ClimateContext} from '../../context/ClimateContext';
-import {useContext} from 'react';
+// import {ClimateContext} from '../../context/ClimateContext';
+// import {useContext} from 'react';
+import useClimateContext from '../../context/ClimateContext';
 
 function ClimateStats() {
 
-  const {temperature, setTemperature, humidity, setHumidity} = useContext(ClimateContext);
+  // const {temperature, humidity} = useContext(ClimateContext);
+  const {temperature, humidity} = useClimateContext();
+
 
   return (
     <div className="climate-stats">

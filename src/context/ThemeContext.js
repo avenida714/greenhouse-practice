@@ -17,4 +17,4 @@ export default function ThemeProvider({ children }) {
       {children}
     </ThemeContext.Provider>
   );
-}
+};
